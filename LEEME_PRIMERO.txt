@@ -1,0 +1,19 @@
+AUDITORIA NOGAI - RELEASE 1
+
+PUBLICACION EN GITHUB PAGES
+1. Descomprimir este ZIP.
+2. Entrar a la carpeta AuditorIA_NOGAI_RELEASE1_GitHubPages.
+3. Subir TODO el contenido de esa carpeta a la raíz del repositorio:
+   juancreyeshn-design.github.io
+4. El archivo index.html debe quedar directamente en la raíz del repositorio.
+5. No subir la carpeta contenedora; subir su contenido.
+6. Esperar 1 a 3 minutos y abrir:
+   https://juancreyeshn-design.github.io/
+
+VERSION OFFLINE
+Abrir localmente:
+offline/auditoria_nogai_sprint015_offline.html
+
+VALIDACION
+El paquete usa rutas relativas y no requiere servidor para la versión offline.
+Para GitHub Pages usa index.html + carpetas core, components, modules y assets.
