@@ -6,6 +6,7 @@ import { SearchEngine } from './search-engine.js';
 import { renderShell,setActive } from '../components/layout.js';
 import { dashboardModule } from '../modules/dashboard.js';
 import { aprenderModule } from '../modules/aprender.js';
+import { metodologiaModule } from '../modules/metodologia.js';
 import { implementarModule } from '../modules/implementar.js';
 import { centroModule } from '../modules/centro-profesional.js';
 import { bibliotecaModule } from '../modules/biblioteca.js';
@@ -19,6 +20,7 @@ const root=document.getElementById('app');renderShell(root);
 const store=new DataStore();const knowledge=new KnowledgeEngine(store);const search=new SearchEngine(store,knowledge);const router=new Router();const renderer=new RenderEngine(store,knowledge,router,search);
 router.add('/',()=>{setActive('/');dashboardModule(renderer,store,knowledge,router);})
 .add('/aprender',()=>{setActive('/aprender');aprenderModule(renderer,store);})
+.add('/metodologia',()=>{setActive('/metodologia');metodologiaModule(renderer);})
 .add('/implementar',()=>{setActive('/implementar');implementarModule(renderer,store,knowledge,router);})
 .add('/centro',()=>{setActive('/centro');centroModule(renderer,store,knowledge,router);})
 .add('/biblioteca',()=>{setActive('/biblioteca');bibliotecaModule(renderer,store,knowledge,router);})
